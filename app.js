@@ -41,7 +41,7 @@ function doLogin() {
   }, 600);
 }
 
-const API_URL = "https://snap2sheet-rtg7.onrender.com";
+const API = "https://snap2sheet-rtg7.onrender.com";
 
 let mode    = 'auto';
 let file    = null;

@@ -41,7 +41,7 @@ function doLogin() {
   }, 600);
 }
 
-const API = 'http://localhost:8000';
+const API = 'https://snap2sheet-rtg7.onrender.com/';
 
 let mode    = 'auto';
 let file    = null;

@@ -69,9 +69,7 @@ def _sheet_formdata(wb: Workbook, fields):
     # Meta
     ws.merge_cells("A2:E2")
     c = ws["A2"]
-    hw = sum(1 for f in fields if f.get("type") == "handwritten")
-    pr = len(fields) - hw
-    c.value = f"Generated: {datetime.now():%Y-%m-%d %H:%M}  |  Total: {len(fields)}  |  Handwritten: {hw}  |  Printed: {pr}"
+    c.value = f"Generated: {datetime.now():%Y-%m-%d %H:%M}"
     c.font, c.fill, c.alignment = _font(C_MUTED, False, 9), _fill(BG_HEAD), _align("center")
     ws.row_dimensions[2].height = 16
 
